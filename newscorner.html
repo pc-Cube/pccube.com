@@ -1,7 +1,12 @@
 <!Docktype html>
 <html>
   <head>
-   <title>PCCUBE-Official</title>
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+       <style>
+              i.tiny {font-size: 1em;}
+               </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title><link rel="shortcut icon" href="https://drive.google.com/file/d/0BxNYHBzQitORcnRZYk5qZjYyQTg/view?usp=sharing">PCCUBE-Official</title>
       <!-- insert bootstrap and style sheet and bootstrap library function for varing width with change in size-->
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -10,9 +15,34 @@
    </head>
     <!--start body FUNTIME APPS PCCUBE-->
   <body>
-      <div class="navbar navbar-inverse navbar-static-top">
+      <!--google analytics-->
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66646712-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+      
+      
+      <!--google anayltics end-->
+      <!--facebook comment api-->
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      
+      <!--end facebook api-->
+      <div class="navbar navbar-default navbar-static-top">
       <div class="container">
-       <div class="navbar-brand">PESCE CAMPUS CHAPTER</div>
+       <div class="navbar-brand" href="index.html"><strong>PESCE CAMPUS CHAPTER</strong></div>
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
           <!--for the 3 lines making a button whwn screen is minimize-->
         <span class="icon-bar"></span>
@@ -21,14 +51,14 @@
       </button>
     <div class="collapse navbar-collapse navHeaderCollapse">
      <ul class="nav navbar-nav navbar-right">
-        <li><a href="home.html">HOME</a></li>
-        <li  class="active"><a href="newscorner.html">NEWS CORNER</a></li>
-        <li><a href="#">GET INVOLVE</a></li>
+        <li><a href="index.html"><strong>HOME</strong></a></li>
+        <li  class="active"><a href="newscorner.html"><strong>NEWS CORNER</strong></a></li>
+        <li><a href="getinvolve.html"><strong>GET INVOLVE</strong></a></li>
         <li class="dropdown">
-           <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONTACT US<b class="caret"></b></a>
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>CONTACT US</strong><b class="caret"></b></a>
            <ul class="dropdown-menu">
-             <li><a href="#">EMAIL</a></li>
-             <li><a href="#">SOCIAL MEDIA</a></li>
+          <!-- <li><a href="#">EMAIL</a></li>  -->
+             <li><a href="https://www.facebook.com/pesccube?ref=hl">SOCIAL MEDIA</a></li>
             </ul>
         </li>
      </ul>           
@@ -41,22 +71,49 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <div class="page-header">
-                <h3>Whatever u want to <small> Posted by PCcube</small></h3>
+                <h3>Coders be ready.. <small> Post by PCcube</small></h3>
                 </div>
-                  <img class="featuredImg" src="img/newspic.jpg" width="100%">
-                <p>CONTENTS</p>
-                <h3> Sub hEADING</h3>
-                <p> PARAGRAHP</p>
-              </div>
+                  <img class="featuredImg" src="img/acmicpc.jpg" width="100%">
+                
+                <h3>ACM ICPC</h3>
+                <p class="text-justify">
+                <b>The ACM ICPC is considered as the "Olympics of Programming Competitions". It is quite simply, the oldest, largest, and most prestigious programming contest in the world.<br>
+The ACM-ICPC (Association for Computing Machinery - International Collegiate Programming Contest) is a multi-tier, team-based, programming competition. Headquartered at Baylor University, Texas, it operates according to the rules and regulations formulated by the ACM. The contest participants come from over 2,000 universities that are spread across 80 countries and six continents.<br>
+In terms of prize money, the top team takes home $12,000 along with the ACM ICPC 2014 Gold medal. Three other teams getting Gold Medal are awarded $6,000. Each Silver Medal team gets $3,000 and each Bronze Medal team is awarded $1,500.<br>
+Apart from that, Participants, coaches and registered staff (including volunteer helpers) receive complimentary membership to the ACM for a year.
+And more important than all, the winners also get some super bragging rights and job offers from some of the top software companies in the world!
+<br></b>
+
+<h4>Contest Structure:</h4>
+The contest consist of two rounds:
+<h4>ICPC Regionals:</h4><b>The regionals are organized by the local universities of different regions spread across the globe. The winners of these regional rounds of the contest get to represent the country in the ACM ICPC World Finals. The Asia Regionals in India are held at 3 sites viz. Amritapuri, IIT Kanpur, and IIT Kharagpur.<br>
+Every regional contest site gets a "slot," which is an invitation for the team to compete in the World Finals. Typically, all the "slots" are allocated by December 31 every year. Additional slots may also be allocated based on student and institution participation, geographic coverage, and team performance. A few bonus slots are allocated each year for growth, innovation, and hosting. So depending on the number of slots that each regional site gets, that many number of top teams it can send to the World Finals.<br>
+Also each regional site can have multiple rounds to select the best teams amongst those who apply. Typically they have an online contest, out of which selected teams are called for the onsite contest. These contests happen from the month of October to December.
+World Finals: The pick of the crop from every regional site locks horn at the World Finals.<br></b>
+                </p>
+               
+                <h3>2016 Coming Soon!</h3>
+                <p>Find your competition<a href="http://icpc.baylor.edu/regionals/upcoming">  here...</a></p>
+                <footer>Source and Picture Credit :<cite title="Source title">CODECHEF,ACM-ICPC</cite></footer>
+                </div>
             </div>
           </div>
+        
       </div>
+       
     </div>
+      
+      <!--facebook comment api-->
+      
+      <div class="fb-comments" data-href="https://www.facebook.com/pesccube?ref=hl" data-width="860" data-numposts="5"></div>
+      
+      <!-- facebook closedapi-->
       
        <div class="navbar navbar-default navbar-fixed-bottom">
           <div class="container">
-          <p class="navbar-text"> PCCUBE Webdesigners Copyright</p>
-          <a href="#" class="navbar-btn btn-primary btn pull-right">Like us on Facebook</a>
+          <p class="navbar-text"><strong>PCCUBE Webdesigner Copyright <span class="glyphicon glyphicon-copyright-mark"></span></strong></p>
+              
+          <a href="https://www.facebook.com/pesccube?ref=hl" class="navbar-btn btn-primary btn pull-right"><span class="glyphicon glyphicon-thumbs-up"></span>    Like us on Facebook</a>
           </div>
        </div>
  
