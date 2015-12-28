@@ -1,16 +1,19 @@
-<!Docktype html>
+<!DOCTYPE html>
 <html>
   <head>
+      
       <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-       <style>
+      
+      <style>
               i.tiny {font-size: 2em;}
                </style>
       <meta name="viewport" content="width=device-width, initial-scale=1">
    <title ><link rel="shortcut icon" href="https://drive.google.com/file/d/0BxNYHBzQitORcnRZYk5qZjYyQTg/view?usp=sharing">PCCUBE-Official</title>
       <!-- insert bootstrap and style sheet and bootstrap library function for varing width with change in size-->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="application-name" content="pccube"/>
    <link href="css/bootstrap.min.css" rel="stylesheet">
-   <link href="css/style.css" rel="stylesheet">
+   <link href=application-name"css/style.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
    </head>
     <!--start body FUNTIME APPS PCCUBE-->
@@ -50,6 +53,7 @@
       <div class="container">
           <link rel="shortcut icon" href="img/favicon.ico">
         <div class="navbar-brand" href="index.html"><strong>PESCE CAMPUS CHAPTER</strong></div>
+        <div class="navbar-brand" id = "clock" class="clock" style="width:100px;height:30px;font-size:20px;color:#926060;padding-left=500px;"></div>
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
           <!--for the 3 lines making a button whwn screen is minimize-->
         <span class="icon-bar"></span>
@@ -169,16 +173,37 @@
               
           <a href="https://www.facebook.com/pesccube?ref=hl" class="navbar-btn btn-primary btn pull-right"><span class="glyphicon glyphicon-thumbs-up"></span>    Like us on Facebook</a>
           </div>
-       </div>
+      </div>
  
 
      <script src="http://maps.googleapis.com/maps/api/js"></script>
      <script src="jquery-1.11.3.min.js"></script>
      <script src="js/bootstrap.js"></script>
-
- <script>window.onbeforeunload = function() {
+     <script>
+               ///matter of time....clock design kr dena
+         var t = setInterval(showtime,50);
+           function showtime() {
+               var today = new Date();
+               var h = today.getHours();
+               var m = today.getMinutes();
+               var s = today.getSeconds();
+               var ms = today.getMilliseconds()
+               h=checktime(h);
+               m=checktime(m);
+               s=checktime(s);
+               ms=checktime(ms);
+               document.getElementById('clock').innerHTML=h+":"+m+":"+s+":"+ms;
+              // var t = setTimeout(function{showtime()},50);
+           }
+               function checktime(x){
+                   if(x < 10){x = "0"+x};
+                   return x;
+               }
+           </script>  
+ <script>window.onbeforeunloadunload = function() {
     return "Thanks for visiting";
     };
+     window.onload = showtime();
     </script>
   </body>
 </html>
@@ -188,3 +213,4 @@
 <!-- Abe kuch churana mat be bahut mehnat laga hai likne me-->
 <!-- you can find this code on GIT -->
 <!--Thodi si editing .....Thank you sudo Bhai--!>
+<!--Bhai tere se hi sikha hai comment likhna style me-->
